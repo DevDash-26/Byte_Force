@@ -7,7 +7,12 @@ export default function RoleSelectionPage() {
       
       {/* HEADER */}
       <header className="h-16 bg-white border-b border-slate-200 flex items-center px-8 z-10 shadow-sm">
-        <span className="text-xl font-black text-blue-700 tracking-tighter">
+        <img 
+          src="/ucl-logo.png" 
+          alt="UCL Logo" 
+          className="h-8 w-auto mr-2"
+        />
+        <span className="text-xl font-black text-red-700 tracking-tighter">
           UCL<span className="text-slate-800">Central</span>
         </span>
       </header>
@@ -26,12 +31,17 @@ export default function RoleSelectionPage() {
         <div className="relative z-10 w-full max-w-md bg-white rounded-2xl shadow-xl border border-slate-100 p-10 flex flex-col items-center">
           
           {/* Main Portal Logo Area */}
-          <div className="w-full h-32 bg-slate-50 border-2 border-dashed border-slate-200 rounded-xl mb-8 flex items-center justify-center">
+          <div className="w-full h-32 bg-slate-50 border-2 border-dashed border-slate-200 rounded-xl mb-8 flex flex-col items-center justify-center">
+            <img 
+  src="/ucl-logo.png" 
+  alt="UCL Logo" 
+  className="h-10 w-auto mb-2"
+/>
             <div className="text-center">
-              <span className="block text-3xl font-black text-blue-700 tracking-tighter">
+              <span className="block text-2xl font-black text-red-700 tracking-tighter leading-none">
                 UCL<span className="text-slate-800">Central</span>
               </span>
-              <span className="text-xs text-slate-500 font-medium uppercase tracking-widest mt-1">
+              <span className="text-[10px] text-slate-500 font-medium uppercase tracking-widest mt-1 block">
                 Portal
               </span>
             </div>
@@ -47,10 +57,10 @@ export default function RoleSelectionPage() {
             {/* Student Button */}
             <Link 
               href="/login" 
-              className="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-bold rounded-xl text-blue-700 bg-blue-50 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all shadow-sm"
+              className="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-bold rounded-xl text-red-700 bg-red-50 hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all shadow-sm"
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-4">
-                <svg className="h-5 w-5 text-blue-500 group-hover:text-blue-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-5 w-5 text-red-500 group-hover:text-red-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path d="M12 14l9-5-9-5-9 5 9 5z" />
                   <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
