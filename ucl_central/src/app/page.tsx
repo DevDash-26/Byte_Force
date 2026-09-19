@@ -56,7 +56,7 @@ export default function RoleSelectionPage() {
             
             {/* Student Button */}
             <Link 
-              href="/login" 
+              href="/login?role=student" 
               className="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-bold rounded-xl text-red-700 bg-red-50 hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all shadow-sm"
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-4">
@@ -71,7 +71,7 @@ export default function RoleSelectionPage() {
 
             {/* Staff Button */}
             <Link 
-              href="/login" 
+              href="/login?role=staff" 
               className="group relative w-full flex justify-center py-4 px-4 border border-slate-200 text-sm font-bold rounded-xl text-slate-700 bg-white hover:bg-slate-800 hover:text-white hover:border-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-all shadow-sm"
             >
               <span className="absolute left-0 inset-y-0 flex items-center pl-4">

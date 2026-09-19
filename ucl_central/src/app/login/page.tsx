@@ -1,7 +1,18 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
 export default function LoginPage() {
+  const searchParams = useSearchParams();
+  const role = searchParams.get('role');
+
+  // Determine dynamic text and routing based on the URL parameter
+  const isStaff = role === 'staff';
+  const roleTitle = isStaff ? 'STAFF LOGIN' : 'STUDENT LOGIN';
+  const dashboardRoute = isStaff ? '/dashboard/staff' : '/dashboard/student';
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 font-sans">
       
@@ -46,10 +57,10 @@ export default function LoginPage() {
             </div>
           </div>
 
-          {/* Form Title */}
+          {/* Dynamic Form Title */}
           <div className="w-full bg-red-50 border border-red-100 rounded-lg py-3 mb-6 flex justify-center">
             <h2 className="text-sm font-bold text-red-800 tracking-wider">
-              STUDENT LOGIN
+              {roleTitle}
             </h2>
           </div>
 
@@ -63,7 +74,6 @@ export default function LoginPage() {
                 type="email" 
                 id="email" 
                 placeholder="EMAIL" 
-                /* Added text-slate-900 here to fix the white text issue */
                 className="w-full px-4 py-3 text-slate-900 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all placeholder:text-slate-400 font-medium"
                 required
               />
@@ -76,15 +86,14 @@ export default function LoginPage() {
                 type="password" 
                 id="password" 
                 placeholder="PASSWORD" 
-                /* Added text-slate-900 here to fix the white text issue */
                 className="w-full px-4 py-3 text-slate-900 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all placeholder:text-slate-400 font-medium"
                 required
               />
             </div>
 
-            {/* Login Action */}
+            {/* Dynamic Login Action */}
             <Link 
-              href="/dashboard/student" 
+              href={dashboardRoute} 
               className="w-full flex justify-center py-3 px-4 border border-transparent text-sm font-bold rounded-xl text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-all shadow-sm mt-4"
             >
               LOGIN
