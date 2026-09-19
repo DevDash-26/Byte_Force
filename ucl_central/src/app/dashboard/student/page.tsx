@@ -95,7 +95,7 @@ export default function StudentDashboard() {
                 <svg className="w-5 h-5 mr-2 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
                 Announcements
               </h3>
-              <div className="space-y-3 min-h-[120px]">
+              <div className="space-y-3 min-h-[30]">
                 <div className="p-3 bg-red-50 text-red-800 rounded-lg text-sm border border-red-100">Library closed for maintenance on Sunday</div>
                 <div className="p-3 bg-slate-50 text-slate-700 rounded-lg text-sm border border-slate-100">Exam schedules released for Trimester 2</div>
               </div>
@@ -107,7 +107,7 @@ export default function StudentDashboard() {
                 <svg className="w-5 h-5 mr-2 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                 Upcoming Events
               </h3>
-              <div className="space-y-3 min-h-[120px]">
+              <div className="space-y-3 min-h-[30]">
                 <div className="p-3 bg-rose-50 text-rose-800 rounded-lg text-sm font-medium border border-rose-100">Hackathon Submission Deadline - 11:59 PM</div>
                 <div className="p-3 bg-slate-50 text-slate-700 rounded-lg text-sm border border-slate-100">Coding Club Meetup - Tomorrow, 4:00 PM</div>
               </div>
@@ -119,7 +119,7 @@ export default function StudentDashboard() {
                 <svg className="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
                 Academic Calendar
               </h3>
-              <div className="flex-1 flex items-center justify-center border-2 border-dashed border-red-200 rounded-lg text-slate-400 bg-slate-50 min-h-[120px]">
+              <div className="flex-1 flex items-center justify-center border-2 border-dashed border-red-200 rounded-lg text-slate-400 bg-slate-50 min-h-[30]">
                 Select a date to view milestones
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function StudentDashboard() {
                 <svg className="w-5 h-5 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 Campus Services
               </h3>
-              <div className="grid grid-cols-2 gap-3 min-h-[120px]">
+              <div className="grid grid-cols-2 gap-3 min-h-[30]">
                 <button className="p-3 border border-slate-200 rounded-lg text-sm text-slate-600 hover:bg-red-50 hover:text-red-700 hover:border-red-200 transition-colors text-left font-medium">Library Hours</button>
                 <button className="p-3 border border-slate-200 rounded-lg text-sm text-slate-600 hover:bg-red-50 hover:text-red-700 hover:border-red-200 transition-colors text-left font-medium">IT Support</button>
               </div>
