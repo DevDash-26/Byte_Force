@@ -15,7 +15,12 @@ export default function StaffDashboard() {
       <aside className="w-64 bg-white border-r border-slate-200 flex flex-col shadow-sm z-20">
         {/* Logo Area */}
         <div className="h-16 flex items-center px-6 border-b border-slate-100">
-          <span className="text-2xl font-black text-blue-700 tracking-tighter">
+          <img 
+            src="/ucl-logo.png" 
+            alt="UCL Logo" 
+            className="h-8 w-auto mr-2"
+          />
+          <span className="text-2xl font-black text-red-700 tracking-tighter">
             UCL<span className="text-slate-800">Central</span>
           </span>
         </div>
@@ -28,7 +33,7 @@ export default function StaffDashboard() {
               href="#" 
               className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                 item === 'HOME' 
-                  ? 'bg-blue-50 text-blue-700' 
+                  ? 'bg-red-50 text-red-700' 
                   : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
               }`}
             >
@@ -52,7 +57,7 @@ export default function StaffDashboard() {
             <input 
               type="text" 
               placeholder="Search campus resources..." 
-              className="w-full pl-10 pr-4 py-2 bg-slate-100 border-transparent rounded-lg text-sm focus:bg-white focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
+              className="w-full pl-10 pr-4 py-2 bg-slate-100 border-transparent rounded-lg text-sm focus:bg-white focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
             />
           </div>
           
@@ -65,7 +70,7 @@ export default function StaffDashboard() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
               <span className="absolute top-1 right-1 h-2 w-2 bg-red-500 rounded-full border border-white"></span>
             </button>
-            <div className="h-9 w-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold cursor-pointer hover:bg-blue-700 transition-colors shadow-sm">
+            <div className="h-9 w-9 rounded-full bg-red-600 text-white flex items-center justify-center font-bold cursor-pointer hover:bg-red-700 transition-colors shadow-sm">
               S
             </div>
           </div>
@@ -86,10 +91,10 @@ export default function StaffDashboard() {
             {/* Semester Timetable Card */}
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-shadow">
               <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center">
-                <svg className="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <svg className="w-5 h-5 mr-2 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 Semester Timetable
               </h3>
-              <div className="flex-1 flex items-center justify-center border-2 border-dashed border-slate-100 rounded-lg text-slate-400 bg-slate-50 min-h-[120px]">
+              <div className="flex-1 flex items-center justify-center border-2 border-dashed border-red-200 rounded-lg text-slate-400 bg-slate-50 min-h-[120px]">
                 No classes scheduled for today
               </div>
             </div>
@@ -97,22 +102,22 @@ export default function StaffDashboard() {
             {/* Upcoming Events Card */}
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-shadow">
               <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center">
-                <svg className="w-5 h-5 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <svg className="w-5 h-5 mr-2 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                 Upcoming Events
               </h3>
               <div className="space-y-3 min-h-[120px]">
-                <div className="p-3 bg-indigo-50 text-indigo-800 rounded-lg text-sm font-medium">Hackathon Briefing - 10:00 AM</div>
-                <div className="p-3 bg-slate-50 text-slate-700 rounded-lg text-sm">Guest Lecture: Cybersecurity - 2:00 PM</div>
+                <div className="p-3 bg-rose-50 text-rose-800 rounded-lg text-sm font-medium border border-rose-100">Hackathon Briefing - 10:00 AM</div>
+                <div className="p-3 bg-slate-50 text-slate-700 rounded-lg text-sm border border-slate-100">Guest Lecture: Cybersecurity - 2:00 PM</div>
               </div>
             </div>
             
             {/* Academic Calendar Card */}
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-shadow">
               <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center">
-                <svg className="w-5 h-5 mr-2 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                <svg className="w-5 h-5 mr-2 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
                 Academic Calendar
               </h3>
-              <div className="flex-1 flex items-center justify-center border-2 border-dashed border-slate-100 rounded-lg text-slate-400 bg-slate-50 min-h-[120px]">
+              <div className="flex-1 flex items-center justify-center border-2 border-dashed border-red-200 rounded-lg text-slate-400 bg-slate-50 min-h-[120px]">
                 Select a date to view milestones
               </div>
             </div>
@@ -120,12 +125,12 @@ export default function StaffDashboard() {
             {/* Campus Services Card */}
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-shadow">
               <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center">
-                <svg className="w-5 h-5 mr-2 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <svg className="w-5 h-5 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 Campus Services
               </h3>
               <div className="grid grid-cols-2 gap-3 min-h-[120px]">
-                <button className="p-3 border border-slate-200 rounded-lg text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-200 transition-colors text-left font-medium">Library Hours</button>
-                <button className="p-3 border border-slate-200 rounded-lg text-sm text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-200 transition-colors text-left font-medium">IT Support</button>
+                <button className="p-3 border border-slate-200 rounded-lg text-sm text-slate-600 hover:bg-red-50 hover:text-red-700 hover:border-red-200 transition-colors text-left font-medium">Library Hours</button>
+                <button className="p-3 border border-slate-200 rounded-lg text-sm text-slate-600 hover:bg-red-50 hover:text-red-700 hover:border-red-200 transition-colors text-left font-medium">IT Support</button>
               </div>
             </div>
 
